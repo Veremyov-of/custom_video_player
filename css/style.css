@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  background-color: #ccc;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.video {
+  width: 100%;
+  display: block;
+}
+
+.c-video {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-video:hover .controls {
+  transform: translateY(0);
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* transform: translateY(100%) translateY(-3px); */
+  transition: all .2s;
+}
+.button_play_pause {
+  padding: 10px;
+}
+.button_play_pause button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.button_play_pause button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(".././img/play.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.button_play_pause button.play::before {
+  content: "";
+  background-image: url(".././img/play.png");
+}
+
+.button_play_pause button.pause::before {
+  content: "";
+  background-image: url(".././img//pause.png");
+}
+.orange-bar {
+  height: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+}
+
+.orange-juice {
+  height: 10px;
+  background-color: #4152EA;
+}
+
+.button_muted {
+  padding: 10px;
+}
+
+.button_muted button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.button_muted button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(".././img/unmuted.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.button_muted button.muted::before {
+  background-image: url(".././img/muted.png");
+}
+.button_muted button.unmuted::before {
+  background-image: url(".././img/unmuted.png");
+}
