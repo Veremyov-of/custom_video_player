@@ -38,10 +38,13 @@
   height: auto;
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.7);
-  /* transform: translateY(100%) translateY(-3px); */
+  transform: translateY(100%) translateY(-3px);
   transition: all .2s;
 }
 .button_play_pause {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 .button_play_pause button {
@@ -89,6 +92,9 @@
 
 .button_muted {
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button_muted button {
